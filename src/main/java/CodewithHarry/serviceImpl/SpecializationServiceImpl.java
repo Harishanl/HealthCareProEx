@@ -4,11 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import CodewithHarry.entites.Specialization;
 import CodewithHarry.repo.SpecializationRepository;
 import CodewithHarry.service.SpecializationService;
-
+@Service
 public class SpecializationServiceImpl implements SpecializationService {
 
 	@Autowired
@@ -47,7 +48,7 @@ public class SpecializationServiceImpl implements SpecializationService {
 
 	@Override
 	public void updateSpecialization(Specialization spec) {
-		repo.save(spec);
+		repo.save(spec); 
 		
 	}
 
