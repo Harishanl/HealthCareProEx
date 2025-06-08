@@ -31,7 +31,10 @@
 					     <td th:text="${ob.specName}"></td>
 					     <td th:text="${ob.specNote}"></td>
 					         <td>
-					             <a>DELETE</a> | <a>EDIT</a>
+					             <a th:href="@{/spec/delete(id=${ob.id})}"
+					class="btn btn-danger">DELETE</a> | <a
+					th:href="@{/spec/edit(id=${ob.id})}" class="btn btn-success">EDIT</a>
+
 					         
 					         </td>
 					</tr>
